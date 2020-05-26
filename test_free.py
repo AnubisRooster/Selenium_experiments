@@ -10,6 +10,11 @@ from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 
+from selenium.webdriver.support.ui import Select
+browser = webdriver.Chrome()
+
+browser.get("https://freebitco.in/?op=home")
+
 class TestFree():
   def setup_method(self, method):
     self.driver = webdriver.Firefox()
