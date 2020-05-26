@@ -18,10 +18,10 @@ song_id = data[x][5]
 
 import tweepy
 
-consumer_key = ("CbODuMUaUOvLcRdcZuFbtkX7T")
-consumer_secret = ("iZ66DJ0dUOW5ask887gpJfWQA6wUkb1g2ZhKktdGSpc8OWM3h2")
-access_token = ("1187418371345866755-QbqzOHwygsvdkeNJJddEboYFOAZnO8")
-access_token_secret = ("77J4NaPugfXhCCvoUkCE87FV9UqP6ex3vyFc1TLdQQ9KS")
+consumer_key = ("yourkey")
+consumer_secret = ("yoursecretkey")
+access_token = ("accesstoken")
+access_token_secret = ( "tokensecret")
 auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 auth.set_access_token(access_token, access_token_secret)
 
