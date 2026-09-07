@@ -1,0 +1,182 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "id": "test_free_testfree",
+      "label": "TestFree",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "TestFree",
+      "file_type": "code",
+      "norm_label": "testfree",
+      "source_file": "test_free.py",
+      "source_location": "L18"
+    },
+    {
+      "id": "test_free_testfree_setup_method",
+      "label": ".setup_method()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "TestFree",
+      "file_type": "code",
+      "norm_label": ".setup_method()",
+      "source_file": "test_free.py",
+      "source_location": "L19"
+    },
+    {
+      "id": "test_free_testfree_teardown_method",
+      "label": ".teardown_method()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "TestFree",
+      "file_type": "code",
+      "norm_label": ".teardown_method()",
+      "source_file": "test_free.py",
+      "source_location": "L23"
+    },
+    {
+      "id": "test_free_testfree_test_free",
+      "label": ".test_free()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "TestFree",
+      "file_type": "code",
+      "norm_label": ".test_free()",
+      "source_file": "test_free.py",
+      "source_location": "L26"
+    },
+    {
+      "id": "scripts_graphify_pipeline_keep",
+      "label": "keep()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "graphify_pipeline.py",
+      "file_type": "code",
+      "norm_label": "keep()",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L41"
+    },
+    {
+      "id": "test_free",
+      "label": "test_free.py",
+      "_origin": "ast",
+      "community": 0,
+      "community_name": "TestFree",
+      "file_type": "code",
+      "norm_label": "test_free.py",
+      "source_file": "test_free.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_graphify_pipeline",
+      "label": "graphify_pipeline.py",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "graphify_pipeline.py",
+      "file_type": "code",
+      "norm_label": "graphify_pipeline.py",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "scripts_graphify_pipeline_rationale_1",
+      "label": "Self-contained graphify pipeline for CI. Builds a knowledge graph over this\u2026",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "graphify_pipeline.py",
+      "file_type": "rationale",
+      "norm_label": "self-contained graphify pipeline for ci. builds a knowledge graph over this...",
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L1"
+    },
+    {
+      "id": "bot",
+      "label": "Bot.py",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "Bot.py",
+      "file_type": "code",
+      "norm_label": "bot.py",
+      "source_file": "Bot.py",
+      "source_location": "L1"
+    }
+  ],
+  "links": [
+    {
+      "source": "scripts_graphify_pipeline",
+      "target": "scripts_graphify_pipeline_keep",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L41",
+      "weight": 1.0
+    },
+    {
+      "source": "test_free",
+      "target": "test_free_testfree",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "test_free.py",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "test_free_testfree",
+      "target": "test_free_testfree_setup_method",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "test_free.py",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "test_free_testfree",
+      "target": "test_free_testfree_teardown_method",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "test_free.py",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "test_free_testfree",
+      "target": "test_free_testfree_test_free",
+      "relation": "method",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "test_free.py",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "scripts_graphify_pipeline_rationale_1",
+      "target": "scripts_graphify_pipeline",
+      "relation": "rationale_for",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "scripts/graphify_pipeline.py",
+      "source_location": "L1",
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "f4a8f26e5e783219fa054dfe2442b8bf37afc00c"
+}
