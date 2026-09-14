@@ -1,7 +1,7 @@
-# Graph Report - Selenium_experiments  (2026-09-07)
+# Graph Report - Selenium_experiments  (2026-09-14)
 
 ## Corpus Check
-- Corpus is ~8,959 words - fits in a single context window. You may not need a graph.
+- Corpus is ~11,547 words - fits in a single context window. You may not need a graph.
 
 ## Summary
 - 9 nodes · 6 edges · 3 communities (0 shown, 2 thin omitted)
